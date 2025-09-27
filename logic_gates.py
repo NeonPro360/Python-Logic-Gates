@@ -1,28 +1,18 @@
-def xor_gate(*statements):
+def xor_gate(statement1, statement 2):
 
-    truths = 0
-
-    for i in range(len(statements)):
-        if statements[i]:
-            truths += 1
-
-    if truths%2 == 1:
-        return True
-    else:
+    if statement1 == statement2:
         return False
+
+    else:
+        return True
 
 def xnor_gate(*statements):
 
-    truths = 0
-
-    for i in range(len(statements)):
-        if statements[i]:
-            truths += 1
-
-    if truths%2 == 0:
-        return True
-    else:
+    if statement1 != statement2:
         return False
+
+    else:
+        return True
 
 def or_gate(*statements):
 
