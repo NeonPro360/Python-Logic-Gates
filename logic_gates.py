@@ -1,4 +1,4 @@
-def xor_gate(statement1, statement 2):
+def xor_gate(statement1, statement2):
 
     if statement1 == statement2:
         return False
@@ -6,7 +6,7 @@ def xor_gate(statement1, statement 2):
     else:
         return True
 
-def xnor_gate(*statements):
+def xnor_gate(statement1, statement2):
 
     if statement1 != statement2:
         return False
