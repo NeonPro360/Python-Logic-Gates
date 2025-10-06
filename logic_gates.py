@@ -1,18 +1,10 @@
 def xor_gate(statement1, statement2):
 
-    if statement1 == statement2:
-        return False
-
-    else:
-        return True
+    return (statement1 or statement2) and not(statement1 and statement2)
 
 def xnor_gate(statement1, statement2):
 
-    if statement1 != statement2:
-        return False
-
-    else:
-        return True
+    return not((statement1 or statement2) and not(statement1 and statement2))
 
 def or_gate(*statements):
 
@@ -54,30 +46,6 @@ def nand_gate(*statements):
 
     return False
 
-def or_gate(*statements):
-
-    for i in range(len(statements)):
-        if statements[i]:
-            return True
-        else:
-            continue
-
-    return False
-
-def nor_gate(*statements):
-
-    for i in range(len(statements)):
-        if statements[i]:
-            return False
-        else:
-            continue
-
-    return True
-
 def not_gate(statement):
 
-    if statement:
-        return False
-
-    else:
-        return True
+    return not(statement)
